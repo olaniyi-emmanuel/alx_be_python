@@ -3,7 +3,7 @@ import datetime
 
 def age_calulator(): 
     #_year = 2
-    user_age = int(input("How old are you"))
+    user_age = int(input("How old are you?"))
     #year_to_be_calculated = input("What year do you want to calculate your age to: ")
     #year_of_birth = datetime.date.today().year - user_age - _year
     #future_age = int(year_to_be_calculated) - year_of_birth
