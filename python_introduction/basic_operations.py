@@ -4,8 +4,8 @@
 #Subtraction of 10 and 5 is 5
 #Multiplication of 10 and 5 is 50
 
-number1 = 5
-number2 = 10
+number1 = 10
+number2 = 5
 
 # Addition 
 def addition(number1, number2):
