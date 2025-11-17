@@ -9,7 +9,7 @@ def weather_clothing():
         return print("Wear a t-shirt and sunglasses.")
     if(weather == "rainy"):
         return print("Don't forget your umbrella and a raincoat.")
-    if(weather =="cols"): 
+    if(weather =="cold"): 
         return print("Make sure to wear a warm coat and a scarf.")
     else:
         return print("Sorry, I don't have recommendations for this weather.")
