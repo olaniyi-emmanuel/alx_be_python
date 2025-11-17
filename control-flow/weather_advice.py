@@ -5,7 +5,7 @@
 def weather_clothing(): 
     weather = input("What's the weather like today? (sunny/rainy/cold):").lower()
 
-    if(weather == "sunny"): 
+    if weather == "sunny": 
         return print("Wear a t-shirt and sunglasses.")
     if(weather == "rainy"):
         return print("Don't forget your umbrella and a raincoat.")
