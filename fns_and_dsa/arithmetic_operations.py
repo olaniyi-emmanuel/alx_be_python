@@ -9,6 +9,9 @@ def perform_operation(num1, num2, operation):
         return num1 - num2 
     elif operation == "multiply": 
         return num1 * num2
-    elif operation == "divide": 
-        return num1 / num2 
+    elif operation == "divide":
+        if num2 == 0: 
+            raise ValueError("Cannot be divided by Zero") 
+        else:
+            return num1 / num2 
     
