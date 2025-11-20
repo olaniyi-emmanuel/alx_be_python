@@ -17,7 +17,7 @@ while True:
     temp = input(f"Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
     if not temp_value:
-        print('Invalid temperature degree ')
+        print("Invalid temperature. Please enter a numeric value.")
     else:
 
         if temp == "C":
@@ -25,5 +25,4 @@ while True:
         elif temp == "F": 
             convert_to_celsius(temp_value)
         else:
-            print('Invalid temperature degree ')
-        
+            print("Invalid temperature. Please enter a numeric value.")
