@@ -7,8 +7,7 @@ def safe_divide(numerator, denominator):
         return 
     
     try:
-        print(f"The result of the division is {new_numerator /new_denominator}")
-        return 
+        result = new_numerator /new_denominator
     except ZeroDivisionError:
         print(f"Error: Cannot divide by zero.")
         return 
