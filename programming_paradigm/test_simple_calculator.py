@@ -16,10 +16,10 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_subtraction(self): 
         self.assertEqual(self.calc.subtract(12, 10), 2)
     
-    def test_multiply(self): 
+    def test_multiplication(self): 
         self.assertEqual(self.calc.multiply(5, 2), 10)
 
-    def test_divide(self): 
+    def test_division(self): 
         self.assertEqual(self.calc.divide(12, 10), 2)
 
 
