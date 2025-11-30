@@ -17,4 +17,4 @@ class BankAccount:
             #rint(f"Insufficient Funds")
             return False 
     def display_balance(self): 
-        return print(f"Current Balance: {self.account_balance } ")
+        return print(f"Current Balance: ${self.account_balance } ")
