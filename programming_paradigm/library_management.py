@@ -6,10 +6,9 @@ class Book():
         self.__is_checked_out = False
     
     def __str__(self):
-        return (f"{self.title} {self.author}")
+        return f"{self.title} {self.author}"
 
-
-class Library():
+class Library:
 
     def __init__(self):
         self.__books = []
@@ -17,17 +16,28 @@ class Library():
     def add_book(self, new_book): 
         self.__books.append(new_book)
 
-    def display_books(self): 
+
+    def list_available_books(self): 
         for books in self.__books:
             print(books)
         
     
     
-    #def check_out_book(title):
+    def check_out_book(self, title,
+                       ):
 
-        
-book = Book(title="Things Fall Apart", author="Chinu Achebe")
-library = Library()
-library.add_book(book)
+        for book in self.__books:
+            if book.title == title:
+                book.is_checked_out = True
+                return  book.is_checked_out
+        return None
 
-library.display_books()
+    #def return_book(title():
+
+
+if __name__ == "__main__":
+    library = Library()
+    book = Book(title="Things Fall Apart", author="Chinu Achebe")
+    library.add_book(book)
+    print(library.check_out_book(title="Things Fall Apart"))
+    print(library.list_available_books())
