@@ -29,14 +29,14 @@ class Book:
 class Library:
 
     def __init__(self):
-        self.__books = []
+        self._books = []
     
     def add_book(self, new_book): 
-        self.__books.append(new_book)
+        self._books.append(new_book)
 
 
     def list_available_books(self): 
-        for books in self.__books:
+        for books in self._books:
             print(books)
 
 
