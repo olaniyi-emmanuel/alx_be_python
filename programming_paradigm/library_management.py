@@ -8,6 +8,21 @@ class Book:
     def __str__(self):
         return f"{self.title} {self.author}"
 
+    def return_book(self, title):
+        if self.__is_checked_out:
+            self.__is_checked_out = False
+
+    def check_out(self):
+        if not self.__is_checked_out:
+            self.__is_checked_out = True
+            return True
+        return False
+
+    def is_available(self) -> bool:
+        """Check if the book is available to be checked out."""
+        return not self.__is_checked_out
+
+
 class Library:
 
     def __init__(self):
@@ -20,22 +35,10 @@ class Library:
     def list_available_books(self): 
         for books in self.__books:
             print(books)
-        
-    
-    
-    def check_out_book(self, title,
-                       ):
 
-        for book in self.__books:
-            if book.title == title:
-                book.is_checked_out = True
-                return  book.is_checked_out
-        return None
 
-    def return_book(self, title):
-        for book in self.__books:
-            if book.title == title:
-                book.is_checked_out = False
+
+
 
 
 
