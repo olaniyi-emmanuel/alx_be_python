@@ -32,7 +32,12 @@ class Library:
                 return  book.is_checked_out
         return None
 
-    #def return_book(title():
+    def return_book(self, title):
+        for book in self.__books:
+            if book.title == title:
+                book.is_checked_out = False
+
+
 
 
 if __name__ == "__main__":
