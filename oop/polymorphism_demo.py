@@ -12,7 +12,7 @@ class Rectangle(Shape):
         self.width = length
 
     def area(self):
-        return  self.length **2
+        return  self.length * self.width
 
 class Circle(Shape):
     def __init__(self, radius:float):
@@ -20,5 +20,4 @@ class Circle(Shape):
         self.radius = radius
 
         def area():
-            return  math.pi * self.radius * self.radius
-
+            return  math.pi * (self.radius ** 2 )
